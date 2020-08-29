@@ -1,0 +1,33 @@
+<div class="banner">
+  <div>
+    <%= form_tag(cocktails_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Cocktails", class: 'form-control' %>
+    <%= submit_tag "Search", :name => nil, class: 'button'%>
+    <% end %>
+  </div>
+  <div>
+    <%= link_to cocktails_path(@cocktails) do %>
+  <%=  image_tag 'logo.jpg', width: "500", id: 'logo'%>
+  <% end %>
+  </div>
+  <div class="landing">
+    <%= link_to 'Create a new cocktail', new_cocktail_path, class: 'button' %>
+  </div>
+</div>
+
+<div class="grid">
+  <% @cocktails.each do |cocktail|%>
+
+    <%= link_to cocktail_path(cocktail) do %>
+    <div class="cards">
+      <h2><%= cocktail.name %> </h2>
+      <ul>
+        <% cocktail.doses.each do |dose|%>
+        <li><%= dose.ingredient.name %></li>
+        <% end %>
+      </ul>
+  </div>
+    <% end %>
+  <% end %>
+</div>
+

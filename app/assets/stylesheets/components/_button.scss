@@ -1,0 +1,25 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  margin: 1rem 1rem 0 auto;
+  padding: 8px 24px;
+  border-radius: 50px;
+  background: #0c1128;
+  box-shadow:  -7px -7px 15px #04060f inset,
+             5px 5px 15px #121a3b inset;
+  transition: .3s;
+  color: $pink;
+  font-family: $button-font;
+  font-size: 1.3rem;
+  border: solid .5px $dark-blue;
+
+
+    &:hover {
+      background: lighten($dark-blue, 1.5%);
+      opacity: 1;
+      text-decoration: none;
+      color: $pink;
+    }
+}

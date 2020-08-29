@@ -1,0 +1,32 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #0B1025;
+  box-shadow:  8px 8px 16px #0f1531 inset,
+             -8px -8px 16px #070b19 inset;
+  font-family: $body-font;
+  font-weight: bold;
+  color: $blue;
+  transition: 150ms linear;
+  letter-spacing: 2px;
+  border: solid .5px $dark-blue;
+
+
+  &:hover {
+   text-decoration: none;
+   background: lighten($dark-blue, 1%);
+  }
+}
+
+.cards {
+
+  h2 {
+    font-family: $body-font;
+  }
+}
