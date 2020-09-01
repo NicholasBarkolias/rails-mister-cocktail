@@ -19,8 +19,6 @@ class CocktailsController < ApplicationController
 
   def create
     @cocktail = Cocktail.new(cocktail_params)
-    @dose = Dose.find(params[:cocktail_id])
-    @cocktail.doses = @cocktail
     if @cocktail.save
       redirect_to cocktail_path(@cocktail)
     else
