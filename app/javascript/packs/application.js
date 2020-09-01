@@ -7,8 +7,7 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-require ("select2")
-require ('select2_simple_form')
+
 
 import 'bootstrap';
 
