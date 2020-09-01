@@ -9,6 +9,6 @@ class Cocktail < ApplicationRecord
   end
 
   def name=(s)
-    super s.capitalize
+    super s.titlecase
   end
 end

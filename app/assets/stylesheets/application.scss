@@ -7,6 +7,7 @@
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import 'select2/dist/css/select2';
 
 // Your CSS partials
 @import "components/index";
@@ -16,18 +17,20 @@
 @import "ingredients";
 
 
+
+
 body {
-  background-color: $dark-blue;
+  background-color: $background;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: $blue;
-  font-family: $body-font;
+  // font-family: $body-font;
+  margin: 0;
+  color: $light-gray;
 }
 
 .writing {
-  font-family: $body-font;
   font-size: 72px;
 }
 
@@ -40,7 +43,7 @@ font-size: 72px;
 }
 
 a {
-  font-family: $body-font;
+  // font-family: $body-font;
 
   &:hover {
   text-decoration: none;

@@ -6,27 +6,31 @@
   width: 300px;
   height: 300px;
   padding: 20px;
-  border-radius: 20px;
-  background: #0B1025;
-  box-shadow:  8px 8px 16px #0f1531 inset,
-             -8px -8px 16px #070b19 inset;
-  font-family: $body-font;
-  font-weight: bold;
-  color: $blue;
+  border-radius: 16px;
+  background: #f7f4f4;
+  font-family: $button-font;
+  color: $black;
   transition: 150ms linear;
   letter-spacing: 2px;
-  border: solid .5px $dark-blue;
 
 
   &:hover {
    text-decoration: none;
-   background: lighten($dark-blue, 1%);
+   width: 305px;
+   height: 305px;
   }
 }
 
 .cards {
 
   h2 {
-    font-family: $body-font;
+    font-family: $button-font;
+    color: $background;
   }
+}
+
+.image {
+  height: 70%;
+  border-bottom: 1px solid $background;
+  background-image: url('../../images/logo.jpg');
 }

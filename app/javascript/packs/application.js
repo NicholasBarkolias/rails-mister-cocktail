@@ -7,7 +7,26 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require ("select2")
+require ('select2_simple_form')
+
 import 'bootstrap';
+import { initSelect2 } from '../components/init_select2';
+import { initSweetalert } from '../plugins/init_sweetalert';
+
+initSelect2();
+
+
+initSweetalert('#sweet-alert-demo', {
+  title: "Are you sure?",
+  text: "This action cannot be reversed",
+  icon: "warning"
+}, (value) => {
+  if (value) {
+    const link = document.querySelector('#delete-link');
+    link.click();
+  }
+});
 
 
 
