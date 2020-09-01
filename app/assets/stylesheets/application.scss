@@ -16,18 +16,6 @@
 @import "ingredients";
 
 
-$red: #FD1015;
-$blue: #82EEF9;
-$yellow: #FFC65A;
-$orange: #E67E22;
-$green: #1EDD88;
-$gray: #0E0000;
-$light-gray: #F4F4F4;
-$pink: #e064d2;
-$dark-blue: #0B0F24;
-$background: #191919;
-
-
 
 
 body {
@@ -60,59 +48,3 @@ a {
   text-decoration: none;
   }
 }
-#submit {
-  // margin-top: 8px;
-}
-
-#background {
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  background-position: 50% 50%;
-}
-
-.nav {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid white;
-  width: 100%;
-  background-color: $background;
-  color: white;
-  position: sticky;
-  top: 0;
-  overflow: visible;
-
-    h1 {
-      color: $light-gray;
-      font-family: $button-font;
-      padding: 8px;
-      margin: 0;
-
-    }
-}
-
-
-.banner {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
-  margin: 2rem;
-  grid-gap: 2rem;
-}
-
-#search-form {
-  font-size: 28px;
-  display: flex;
-  align-items: center;
-  margin-top: 4px;
-  margin-right: 2rem;
-}
-
-
